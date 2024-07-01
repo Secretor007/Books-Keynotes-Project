@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container mx-auto d-flex justify-content-center">
+  <div class="row">
+    <div class="col">
+      <h2 class="pb-5" style="margin-top: 100px"><%= book[0].title %></h2>
+      <img
+        style="float: none"
+        id="show-img"
+        src="<%= book[0].image_url %>"
+        alt="<%= book[0].title %>-image"
+      />
+      <h3 class="pt-5">My Notes</h3>
+      <pre
+        class="h4"
+        style="overflow: auto; max-width: 100%; white-space: pre-wrap"
+      >
+<%= book[0].keynote %></pre
+      >
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+<div class="container">
+  <h1 class="mx-auto d-flex justify-content-center pb-5">Add New Book</h1>
+  <form action="/new" method="post">
+    <div class="form-group">
+      <label class="h4" for="title">Title</label>
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        id="title"
+        name="title"
+      />
+    </div>
+    <div class="form-group">
+      <label class="h4" for="keypoints">Keypoints</label>
+      <pre><textarea
+        class="form-control form-control-lg"
+        id="Keypoints"
+        rows="3"
+        name="keypoints"
+      ></textarea></pre>
+    </div>
+    <input
+      class="btn btn-info btn-lg mx-auto d-flex justify-content-center"
+      type="submit"
+      value="Add Book"
+    />
+  </form>
+</div>
+<%- include("partials/footer.ejs") %>
